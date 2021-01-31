@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default sync-j="2" />
+
+  <remote name="yocto"
+    fetch="git://git.yoctoproject.org" />
+  <remote name="oe"
+    fetch="git://git.openembedded.org" />
+  <remote name="meta-qt"
+    fetch="https://code.qt.io/cgit/yocto" />
+  
+  <!-- Yocto/OE layers -->
+  <project remote="yocto" revision="warrior"
+    name="poky" path="src/poky" />
+  <project remote="yocto" revision="zeus"
+    name="meta-ti" path="src/meta-ti" />
+  <project remote="oe" revision="warrior"
+    name="meta-openembedded" path="src/meta-openembedded" />
+  <project remote="meta-qt" revision="5.6"
+    name="meta-qt5.git" path="src/meta-qt5" />
+  <project remote="yocto" revision="warrior"
+    name="meta-selinux" path="src/meta-selinux" />
+  <project remote="yocto" revision="warrior"
+    name="meta-security" path="src/meta-security" />
+</manifest>
